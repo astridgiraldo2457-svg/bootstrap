@@ -507,7 +507,7 @@
       </div>
     </section>
     <!--contactos-->
-    <section id="contactos" class="contacto seccion-oscura">
+    <section id="formulario contacto" class="contacto seccion-oscura">
       <div class="container">
         <div
           class="container text-center rectangulo d-flex justify-content-evenly"
@@ -515,16 +515,55 @@
           <div class="row">
             <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
             <div class="col-12 col-md-4 descripcion">
-              Contactame para iniciar tu proyecto de desarrollo Web y hare q tu
+              Contactame para iniciar tu proyecto de desarrollo Web y hare que tu
               visión se vuelva realidad
             </div>
+            
             <div class="col-12 col-md-4">
               <a href="mailton:nayibelopez2457@gimail.com">
-                <button type="button">
+                <button type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalContacto">
                   contacto
                   <i class="bi bi-envelope-check-fill"></i>
+                  
                 </button>
               </a>
+              <div class="modal fade" id="modalContacto"
+              tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-center bg-dark text-linght">
+                  <div class="modal-header">
+                    <h5 class="modal-title">formulario de contacto</h5>
+                    <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                      <lavel>Nombre</lavel> 
+                    <input type="text"
+                    class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                    <label>correo</label>
+                    <input type="email"
+                    class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                    <label>mensaje</label>
+                    <textarea class="form-control" row="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    enviar mensaje
+                  </button>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
